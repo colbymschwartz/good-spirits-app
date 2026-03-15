@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { SPIRIT_ICONS, STYLE_LABELS } from '../data/constants';
+import { SPIRIT_ICONS, STYLE_LABELS, MOOD_LABELS } from '../data/constants';
 import { parseSpecLine } from '../utils/parseSpec';
 import { formatAmount } from '../utils/formatAmount';
 

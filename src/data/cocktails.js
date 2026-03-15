@@ -707,7 +707,7 @@ export const COCKTAILS = [
           "heavy-cream",
           "nutmeg"
         ],
-        "glass": "irish-coffee-mug",
+        "glass": "irish coffee mug",
         "garnish": "Lightly whipped heavy cream on top, dusting of nutmeg",
         "method": "Build",
         "steps": "Pour hot coffee into an Irish coffee mug. Add Irish whiskey and rich syrup or sugar, stir until dissolved. Separately, whip heavy cream to soft peaks (it should be barely thick, almost pourable). Pour the coffee mixture into the mug, then gently pour the whipped cream over the back of a bar spoon so it floats on top. Finish with a light dusting of nutmeg.",
@@ -731,7 +731,7 @@ export const COCKTAILS = [
           "heavy-cream",
           "cinnamon"
         ],
-        "glass": "irish-coffee-mug",
+        "glass": "irish coffee mug",
         "garnish": "Whipped cream, cinnamon dusting",
         "method": "Build",
         "steps": "Pour coffee into mug. Add brandy and Grand Marnier, stir. Float whipped cream on top. Dust with cinnamon.",
@@ -754,7 +754,7 @@ export const COCKTAILS = [
           "coffee",
           "heavy-cream"
         ],
-        "glass": "irish-coffee-mug",
+        "glass": "irish coffee mug",
         "garnish": "Whipped cream, cayenne dusting",
         "method": "Build",
         "steps": "Pour coffee into mug. Add mezcal and Kahlúa, stir. Float whipped cream on top. Dust with cayenne.",
@@ -793,7 +793,7 @@ export const COCKTAILS = [
           "honey-syrup",
           "lemon-juice"
         ],
-        "glass": "irish-coffee-mug",
+        "glass": "irish coffee mug",
         "garnish": "Cinnamon stick, 2-3 whole cloves, lemon wheel",
         "method": "Build",
         "steps": "In a mug, add honey, lemon juice, and hot water. Stir until honey dissolves. Add whiskey. Stir gently. Garnish with cinnamon stick and cloves pierced through a lemon wheel.",
@@ -816,7 +816,7 @@ export const COCKTAILS = [
           "honey-syrup",
           "lemon-juice"
         ],
-        "glass": "irish-coffee-mug",
+        "glass": "irish coffee mug",
         "garnish": "Cinnamon stick, cloves, lemon wheel",
         "method": "Build",
         "steps": "Add honey and lemon juice to mug with hot water. Stir until honey dissolves. Add rum. Stir. Garnish with cinnamon stick, cloves, and lemon wheel.",
@@ -839,7 +839,7 @@ export const COCKTAILS = [
           "honey-syrup",
           "lemon-juice"
         ],
-        "glass": "irish-coffee-mug",
+        "glass": "irish coffee mug",
         "garnish": "Cinnamon stick, cloves, lemon wheel",
         "method": "Build",
         "steps": "Add honey and lemon juice to mug with hot water. Stir until honey dissolves. Add brandy. Stir. Garnish.",
@@ -3200,7 +3200,7 @@ export const COCKTAILS = [
           "ginger-beer",
           "lime-juice"
         ],
-        "glass": "copper-mug",
+        "glass": "copper mug",
         "garnish": "Lime wheel, ginger slice",
         "method": "Build",
         "steps": "Fill a copper mug with ice. Pour 2 oz bourbon over ice. Top with 4-5 oz ginger beer. Squeeze fresh lime juice and stir briefly. Garnish with a lime wheel and fresh ginger slice.",
@@ -4312,7 +4312,7 @@ export const COCKTAILS = [
           "ginger-beer",
           "lime-juice"
         ],
-        "glass": "copper-mug",
+        "glass": "copper mug",
         "garnish": "Lime wheel, fresh ginger slice",
         "method": "Build",
         "steps": "Fill a copper mug with ice. Pour 2 oz vodka over ice. Top with 4-5 oz ginger beer. Squeeze fresh lime juice over the drink. Stir briefly. Garnish with a lime wheel and ginger slice.",
@@ -4332,7 +4332,7 @@ export const COCKTAILS = [
           "ginger-beer",
           "lime-juice"
         ],
-        "glass": "copper-mug",
+        "glass": "copper mug",
         "garnish": "Lime wheel, ginger slice",
         "method": "Build",
         "steps": "Fill a copper mug with ice. Pour 2 oz bourbon over ice. Top with 4-5 oz ginger beer. Add fresh lime juice. Stir briefly. Garnish with a lime wheel and ginger slice.",
@@ -4351,7 +4351,7 @@ export const COCKTAILS = [
           "ginger-beer",
           "lime-juice"
         ],
-        "glass": "copper-mug",
+        "glass": "copper mug",
         "garnish": "Lime wheel, ginger slice",
         "method": "Build",
         "steps": "Fill a copper mug with ice. Pour 2 oz blanco tequila over ice. Top with 4-5 oz ginger beer. Add fresh lime juice. Stir briefly. Garnish with a lime wheel and ginger slice.",
@@ -4371,7 +4371,7 @@ export const COCKTAILS = [
           "ginger-beer",
           "lime-juice"
         ],
-        "glass": "copper-mug",
+        "glass": "copper mug",
         "garnish": "Lime wheel, ginger slice",
         "method": "Build",
         "steps": "Fill a copper mug with ice. Pour 2 oz London Dry gin over ice. Top with 4-5 oz ginger beer. Add fresh lime juice. Stir briefly. Garnish with a lime wheel and ginger slice.",
@@ -5867,7 +5867,7 @@ export const COCKTAILS = [
     "id": "old-cuban",
     "name": "Old Cuban",
     "difficulty": "Mixology Guru",
-    "style": "sparkling",
+    "style": "fizz",
     "spirit": "rum",
     "era": "modern",
     "history": "Created by Audrey Saunders at Pegu Club in New York around 2001, the Old Cuban is essentially a Mojito dressed in a tuxedo. Saunders took the classic Cuban template — rum, lime, mint, sugar — and elevated it with aged rum, Angostura bitters, and a champagne float. It became an instant modern classic and cemented Saunders' reputation as one of the most influential bartenders of the 21st century. The drink perfectly bridges casual tropical flavors with black-tie elegance.",
@@ -6664,7 +6664,7 @@ export const COCKTAILS = [
           "demerara-syrup",
           "heavy-cream"
         ],
-        "glass": "irish-coffee-glass",
+        "glass": "irish coffee glass",
         "garnish": "Freshly grated nutmeg",
         "method": "Build",
         "steps": "Warm an Irish coffee glass with hot water, then discard. Add the demerara syrup and Bushmills whiskey. Pour in fresh hot coffee (not boiling—around 200°F). Stir briefly. Lightly whip the cream by hand in a shaker—it should pour, not mound. Float the cream over the back of a spoon onto the surface. Grate fresh nutmeg on top. Drink through the cream.",
