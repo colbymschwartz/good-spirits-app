@@ -13,6 +13,12 @@ export default function CreateCocktailModal({ onClose, onSave }) {
   const [method, setMethod] = useState("Stir");
   const [garnish, setGarnish] = useState("");
   const [steps, setSteps] = useState("");
+
+  React.useEffect(() => {
+    const handleEsc = (e) => { if (e.key === "Escape") onClose(); };
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, [onClose]);
   const [ratioNotes, setRatioNotes] = useState("");
 
   const addSpec = () => setSpecLines([...specLines, { text: "" }]);

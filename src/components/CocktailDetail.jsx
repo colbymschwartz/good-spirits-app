@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { SPIRIT_ICONS, STYLE_LABELS, MOOD_LABELS } from '../data/constants';
+import { SPIRIT_ICONS, STYLE_LABELS } from '../data/constants';
 import { parseSpecLine } from '../utils/parseSpec';
 import { formatAmount } from '../utils/formatAmount';
 
@@ -68,7 +68,7 @@ export default function CocktailDetail({
           canvas.width = maxW;
           canvas.height = img.height * scale;
           canvas.getContext("2d").drawImage(img, 0, 0, canvas.width, canvas.height);
-          savePhoto(variation.name, canvas.toDataURL("image/jpeg", 0.7));
+          savePhoto(variation.name, canvas.toDataURL("image/jpeg", 0.85));
         };
         img.src = ev.target.result;
       };
@@ -82,6 +82,12 @@ export default function CocktailDetail({
     setSaveName("");
     setEditingNote(false);
   }, [activeVariation]);
+
+  useEffect(() => {
+    const handleEsc = (e) => { if (e.key === "Escape") onClose(); };
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, [onClose]);
 
   return (
     <div className="modal active" onClick={e => { if (e.target === e.currentTarget) onClose(); }}>

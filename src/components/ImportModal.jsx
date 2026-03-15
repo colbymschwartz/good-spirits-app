@@ -11,6 +11,12 @@ export default function ImportModal({ onClose, onSave }) {
   const [scanPreview, setScanPreview] = useState(null);
   const [scanProgress, setScanProgress] = useState(0);
 
+  React.useEffect(() => {
+    const handleEsc = (e) => { if (e.key === "Escape") onClose(); };
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, [onClose]);
+
   const parseRecipe = (text) => {
     const input = text || rawText;
     const lines = input.split("\n").map(l => l.trim()).filter(l => l);
@@ -65,10 +71,7 @@ export default function ImportModal({ onClose, onSave }) {
         setScanning(false);
         setScanProgress(100);
 
-        // Auto-parse if we got meaningful text
-        if (extractedText.trim().length > 10) {
-          // Don't auto-parse — let user review and edit the extracted text first
-        }
+        // User reviews and edits extracted text before clicking Parse
       } catch (err) {
         console.error("OCR failed:", err);
         setScanning(false);

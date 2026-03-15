@@ -13,7 +13,11 @@ export const storage = {
   set(key, value) {
     try {
       localStorage.setItem("good-spirits-" + key, JSON.stringify(value));
-    } catch {}
+    } catch (e) {
+      if (e.name === 'QuotaExceededError' || e.code === 22) {
+        console.warn('Good Spirits: localStorage full. Some data may not be saved.');
+      }
+    }
   }
 };
 

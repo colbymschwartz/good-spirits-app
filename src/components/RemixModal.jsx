@@ -9,6 +9,12 @@ export default function RemixModal({ cocktail, variation, onClose, onSave }) {
   const [garnish, setGarnish] = useState(variation.garnish || "");
   const [notes, setNotes] = useState("");
 
+  React.useEffect(() => {
+    const handleEsc = (e) => { if (e.key === "Escape") onClose(); };
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, [onClose]);
+
   const updateSpec = (idx, text) => { const n = [...specLines]; n[idx] = { text }; setSpecLines(n); };
   const removeSpec = idx => setSpecLines(specLines.filter((_, i) => i !== idx));
   const addSpec = () => setSpecLines([...specLines, { text: "" }]);
