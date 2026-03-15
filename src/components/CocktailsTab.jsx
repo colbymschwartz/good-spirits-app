@@ -151,8 +151,8 @@ export default function CocktailsTab({ cocktails, customCocktails, onSelect, fav
         </div>
       )}
       <div style={{ position: "fixed", bottom: "84px", right: "16px", display: "flex", flexDirection: "column", gap: "10px", zIndex: 50 }}>
-        <button className="create-fab" style={{ width: "44px", height: "44px", fontSize: "18px", background: "var(--border-light)" }} onClick={onShowImport} title="Import Recipe">{"\u{1F4CB}"}</button>
-        <button className="create-fab" onClick={onShowCreate} title="Create New">+</button>
+        <button className="create-fab" style={{ position: "static", width: "44px", height: "44px", fontSize: "18px", background: "var(--border-light)" }} onClick={onShowImport} title="Import Recipe">{"\u{1F4CB}"}</button>
+        <button className="create-fab" style={{ position: "static" }} onClick={onShowCreate} title="Create New">+</button>
       </div>
     </div>
   );
