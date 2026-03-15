@@ -2,6 +2,7 @@ export const COCKTAILS = [
 {
   id: "old-fashioned",
   name: "Old Fashioned",
+  difficulty: "Hotel Bar",
   style: "spirit-forward",
   spirit: "whiskey",
   era: "golden-age",
@@ -66,6 +67,7 @@ export const COCKTAILS = [
 }, {
   id: "manhattan",
   name: "Manhattan",
+  difficulty: "Hotel Bar",
   style: "spirit-forward",
   spirit: "whiskey",
   era: "golden-age",
@@ -130,6 +132,7 @@ export const COCKTAILS = [
 }, {
   id: "whiskey-sour",
   name: "Whiskey Sour",
+  difficulty: "Hotel Bar",
   style: "sour",
   spirit: "whiskey",
   era: "golden-age",
@@ -172,6 +175,7 @@ export const COCKTAILS = [
 }, {
   id: "sazerac",
   name: "Sazerac",
+  difficulty: "Mixology Guru",
   style: "spirit-forward",
   spirit: "whiskey",
   era: "golden-age",
@@ -214,6 +218,7 @@ export const COCKTAILS = [
 }, {
   id: "mint-julep",
   name: "Mint Julep",
+  difficulty: "Dive Bar",
   style: "spirit-forward",
   spirit: "whiskey",
   era: "golden-age",
@@ -256,6 +261,7 @@ export const COCKTAILS = [
 }, {
   id: "paper-plane",
   name: "Paper Plane",
+  difficulty: "Mixology Guru",
   style: "sour",
   spirit: "whiskey",
   era: "craft-revival",
@@ -287,6 +293,7 @@ export const COCKTAILS = [
 }, {
   id: "penicillin",
   name: "Penicillin",
+  difficulty: "Hotel Bar",
   style: "sour",
   spirit: "whiskey",
   era: "craft-revival",
@@ -329,6 +336,7 @@ export const COCKTAILS = [
 }, {
   id: "irish-coffee",
   name: "Irish Coffee",
+  difficulty: "Hotel Bar",
   style: "hot",
   spirit: "whiskey",
   era: "golden-age",
@@ -371,6 +379,7 @@ export const COCKTAILS = [
 }, {
   id: "hot-toddy",
   name: "Hot Toddy",
+  difficulty: "Dive Bar",
   style: "hot",
   spirit: "whiskey",
   era: "golden-age",
@@ -413,6 +422,7 @@ export const COCKTAILS = [
 }, {
   id: "vieux-carre",
   name: "Vieux Carré",
+  difficulty: "Mixology Guru",
   style: "spirit-forward",
   spirit: "whiskey",
   era: "golden-age",
@@ -444,6 +454,7 @@ export const COCKTAILS = [
 }, {
   id: "blood-and-sand",
   name: "Blood & Sand",
+  difficulty: "Mixology Guru",
   style: "spirit-forward",
   spirit: "whiskey",
   era: "golden-age",
@@ -475,6 +486,7 @@ export const COCKTAILS = [
 }, {
   id: "rusty-nail",
   name: "Rusty Nail",
+  difficulty: "Dive Bar",
   style: "spirit-forward",
   spirit: "whiskey",
   era: "golden-age",
@@ -506,6 +518,7 @@ export const COCKTAILS = [
 }, {
   id: "godfather",
   name: "Godfather",
+  difficulty: "Dive Bar",
   style: "spirit-forward",
   spirit: "whiskey",
   era: "craft-revival",
@@ -537,6 +550,7 @@ export const COCKTAILS = [
 }, {
   id: "new-york-sour",
   name: "New York Sour",
+  difficulty: "Hotel Bar",
   style: "sour",
   spirit: "whiskey",
   era: "golden-age",
@@ -568,6 +582,7 @@ export const COCKTAILS = [
 }, {
   id: "brown-derby",
   name: "Brown Derby",
+  difficulty: "Hotel Bar",
   style: "sour",
   spirit: "whiskey",
   era: "golden-age",
@@ -599,6 +614,7 @@ export const COCKTAILS = [
 }, {
   id: "ward-eight",
   name: "Ward Eight",
+  difficulty: "Hotel Bar",
   style: "sour",
   spirit: "whiskey",
   era: "golden-age",
@@ -630,6 +646,7 @@ export const COCKTAILS = [
 }, {
   id: "martini",
   name: "Martini",
+  difficulty: "Hotel Bar",
   style: "spirit-forward",
   spirit: "gin",
   era: "golden-age",
@@ -694,6 +711,7 @@ export const COCKTAILS = [
 }, {
   id: "negroni",
   name: "Negroni",
+  difficulty: "Hotel Bar",
   style: "spirit-forward",
   spirit: "gin",
   era: "golden-age",
@@ -769,6 +787,7 @@ export const COCKTAILS = [
 }, {
   id: "gimlet",
   name: "Gimlet",
+  difficulty: "Hotel Bar",
   style: "sour",
   spirit: "gin",
   era: "golden-age",
@@ -811,6 +830,7 @@ export const COCKTAILS = [
 }, {
   id: "tom-collins",
   name: "Tom Collins",
+  difficulty: "Hotel Bar",
   style: "highball",
   spirit: "gin",
   era: "golden-age",
@@ -853,6 +873,7 @@ export const COCKTAILS = [
 }, {
   id: "gin-and-tonic",
   name: "Gin & Tonic",
+  difficulty: "Dive Bar",
   style: "highball",
   spirit: "gin",
   era: "golden-age",
@@ -895,6 +916,7 @@ export const COCKTAILS = [
 }, {
   id: "last-word",
   name: "Last Word",
+  difficulty: "Mixology Guru",
   style: "sour",
   spirit: "gin",
   era: "golden-age",
@@ -937,6 +959,7 @@ export const COCKTAILS = [
 }, {
   id: "aviation",
   name: "Aviation",
+  difficulty: "Mixology Guru",
   style: "sour",
   spirit: "gin",
   era: "golden-age",
@@ -968,6 +991,7 @@ export const COCKTAILS = [
 }, {
   id: "corpse-reviver-2",
   name: "Corpse Reviver #2",
+  difficulty: "Mixology Guru",
   style: "sour",
   spirit: "gin",
   era: "golden-age",
@@ -999,6 +1023,7 @@ export const COCKTAILS = [
 }, {
   id: "french-75",
   name: "French 75",
+  difficulty: "Hotel Bar",
   style: "highball",
   spirit: "gin",
   era: "golden-age",
@@ -1030,6 +1055,7 @@ export const COCKTAILS = [
 }, {
   id: "gin-fizz",
   name: "Gin Fizz",
+  difficulty: "Hotel Bar",
   style: "fizz",
   spirit: "gin",
   era: "golden-age",
@@ -1072,6 +1098,7 @@ export const COCKTAILS = [
 }, {
   id: "bramble",
   name: "Bramble",
+  difficulty: "Hotel Bar",
   style: "sour",
   spirit: "gin",
   era: "craft-revival",
@@ -1103,6 +1130,7 @@ export const COCKTAILS = [
 }, {
   id: "clover-club",
   name: "Clover Club",
+  difficulty: "Hotel Bar",
   style: "sour",
   spirit: "gin",
   era: "golden-age",
@@ -1134,6 +1162,7 @@ export const COCKTAILS = [
 }, {
   id: "southside",
   name: "Southside",
+  difficulty: "Hotel Bar",
   style: "sour",
   spirit: "gin",
   era: "prohibition",
@@ -1165,6 +1194,7 @@ export const COCKTAILS = [
 }, {
   id: "singapore-sling",
   name: "Singapore Sling",
+  difficulty: "Mixology Guru",
   style: "sour",
   spirit: "gin",
   era: "golden-age",
@@ -1196,6 +1226,7 @@ export const COCKTAILS = [
 }, {
   id: "sidecar",
   name: "Sidecar",
+  difficulty: "Hotel Bar",
   style: "sour",
   spirit: "brandy",
   era: "golden-age",
@@ -1227,6 +1258,7 @@ export const COCKTAILS = [
 }, {
   id: "pisco-sour",
   name: "Pisco Sour",
+  difficulty: "Hotel Bar",
   style: "sour",
   spirit: "brandy",
   era: "golden-age",
@@ -1258,6 +1290,7 @@ export const COCKTAILS = [
 }, {
   id: "brandy-alexander",
   name: "Brandy Alexander",
+  difficulty: "Hotel Bar",
   style: "spirit-forward",
   spirit: "brandy",
   era: "golden-age",
@@ -1289,6 +1322,7 @@ export const COCKTAILS = [
 }, {
   id: "jack-rose",
   name: "Jack Rose",
+  difficulty: "Hotel Bar",
   style: "sour",
   spirit: "brandy",
   era: "golden-age",
@@ -1320,6 +1354,7 @@ export const COCKTAILS = [
 }, {
   id: "stinger",
   name: "Stinger",
+  difficulty: "Dive Bar",
   style: "spirit-forward",
   spirit: "brandy",
   era: "golden-age",
@@ -1351,6 +1386,7 @@ export const COCKTAILS = [
 }, {
   id: "saratoga",
   name: "Saratoga",
+  difficulty: "Mixology Guru",
   style: "spirit-forward",
   spirit: "brandy",
   era: "golden-age",
@@ -1373,6 +1409,7 @@ export const COCKTAILS = [
 {
   id: "daiquiri",
   name: "Daiquiri",
+  difficulty: "Hotel Bar",
   style: "sour",
   spirit: "rum",
   era: "golden-age",
@@ -1426,6 +1463,7 @@ export const COCKTAILS = [
 }, {
   id: "mojito",
   name: "Mojito",
+  difficulty: "Hotel Bar",
   style: "highball",
   spirit: "rum",
   era: "golden-age",
@@ -1468,6 +1506,7 @@ export const COCKTAILS = [
 }, {
   id: "mai-tai",
   name: "Mai Tai",
+  difficulty: "Mixology Guru",
   style: "tiki",
   spirit: "rum",
   era: "tiki-era",
@@ -1510,6 +1549,7 @@ export const COCKTAILS = [
 }, {
   id: "pina-colada",
   name: "Piña Colada",
+  difficulty: "Hotel Bar",
   style: "frozen",
   spirit: "rum",
   era: "tiki-era",
@@ -1552,6 +1592,7 @@ export const COCKTAILS = [
 }, {
   id: "dark-stormy",
   name: "Dark & Stormy",
+  difficulty: "Dive Bar",
   style: "highball",
   spirit: "rum",
   era: "craft-revival",
@@ -1583,6 +1624,7 @@ export const COCKTAILS = [
 }, {
   id: "jungle-bird",
   name: "Jungle Bird",
+  difficulty: "Mixology Guru",
   style: "tiki",
   spirit: "rum",
   era: "tiki-era",
@@ -1614,6 +1656,7 @@ export const COCKTAILS = [
 }, {
   id: "painkiller",
   name: "Painkiller",
+  difficulty: "Hotel Bar",
   style: "tiki",
   spirit: "rum",
   era: "craft-revival",
@@ -1645,6 +1688,7 @@ export const COCKTAILS = [
 }, {
   id: "zombie",
   name: "Zombie",
+  difficulty: "Mixology Guru",
   style: "tiki",
   spirit: "rum",
   era: "tiki-era",
@@ -1676,6 +1720,7 @@ export const COCKTAILS = [
 }, {
   id: "hurricane",
   name: "Hurricane",
+  difficulty: "Hotel Bar",
   style: "tiki",
   spirit: "rum",
   era: "tiki-era",
@@ -1707,6 +1752,7 @@ export const COCKTAILS = [
 }, {
   id: "cuba-libre",
   name: "Cuba Libre",
+  difficulty: "Dive Bar",
   style: "highball",
   spirit: "rum",
   era: "golden-age",
@@ -1738,6 +1784,7 @@ export const COCKTAILS = [
 }, {
   id: "ti-punch",
   name: "Ti' Punch",
+  difficulty: "Dive Bar",
   style: "sour",
   spirit: "rum",
   era: "golden-age",
@@ -1769,6 +1816,7 @@ export const COCKTAILS = [
 }, {
   id: "navy-grog",
   name: "Navy Grog",
+  difficulty: "Mixology Guru",
   style: "tiki",
   spirit: "rum",
   era: "tiki-era",
@@ -1800,6 +1848,7 @@ export const COCKTAILS = [
 }, {
   id: "margarita",
   name: "Margarita",
+  difficulty: "Hotel Bar",
   style: "sour",
   spirit: "tequila",
   era: "craft-revival",
@@ -1864,6 +1913,7 @@ export const COCKTAILS = [
 }, {
   id: "paloma",
   name: "Paloma",
+  difficulty: "Dive Bar",
   style: "highball",
   spirit: "tequila",
   era: "craft-revival",
@@ -1906,6 +1956,7 @@ export const COCKTAILS = [
 }, {
   id: "tequila-sunrise",
   name: "Tequila Sunrise",
+  difficulty: "Dive Bar",
   style: "highball",
   spirit: "tequila",
   era: "disco",
@@ -1937,6 +1988,7 @@ export const COCKTAILS = [
 }, {
   id: "ranch-water",
   name: "Ranch Water",
+  difficulty: "Dive Bar",
   style: "highball",
   spirit: "tequila",
   era: "modern",
@@ -1979,6 +2031,7 @@ export const COCKTAILS = [
 }, {
   id: "naked-famous",
   name: "Naked & Famous",
+  difficulty: "Mixology Guru",
   style: "sour",
   spirit: "mezcal",
   era: "craft-revival",
@@ -2010,6 +2063,7 @@ export const COCKTAILS = [
 }, {
   id: "el-diablo",
   name: "El Diablo",
+  difficulty: "Mixology Guru",
   style: "highball",
   spirit: "tequila",
   era: "golden-age",
@@ -2041,6 +2095,7 @@ export const COCKTAILS = [
 }, {
   id: "mexican-firing-squad",
   name: "Mexican Firing Squad",
+  difficulty: "Mixology Guru",
   style: "sour",
   spirit: "tequila",
   era: "craft-revival",
@@ -2072,6 +2127,7 @@ export const COCKTAILS = [
 }, {
   id: "batanga",
   name: "Batanga",
+  difficulty: "Dive Bar",
   style: "highball",
   spirit: "tequila",
   era: "golden-age",
@@ -2103,6 +2159,7 @@ export const COCKTAILS = [
 }, {
   id: "moscow-mule",
   name: "Moscow Mule",
+  difficulty: "Dive Bar",
   style: "highball",
   spirit: "vodka",
   era: "golden-age",
@@ -2155,6 +2212,7 @@ export const COCKTAILS = [
 }, {
   id: "espresso-martini",
   name: "Espresso Martini",
+  difficulty: "Hotel Bar",
   style: "sour",
   spirit: "vodka",
   era: "craft-revival",
@@ -2197,6 +2255,7 @@ export const COCKTAILS = [
 }, {
   id: "cosmopolitan",
   name: "Cosmopolitan",
+  difficulty: "Hotel Bar",
   style: "sour",
   spirit: "vodka",
   era: "craft-revival",
@@ -2239,6 +2298,7 @@ export const COCKTAILS = [
 }, {
   id: "bloody-mary",
   name: "Bloody Mary",
+  difficulty: "Hotel Bar",
   style: "highball",
   spirit: "vodka",
   era: "golden-age",
@@ -2270,6 +2330,7 @@ export const COCKTAILS = [
 }, {
   id: "white-russian",
   name: "White Russian",
+  difficulty: "Dive Bar",
   style: "sour",
   spirit: "vodka",
   era: "golden-age",
@@ -2311,6 +2372,7 @@ export const COCKTAILS = [
 }, {
   id: "lemon-drop",
   name: "Lemon Drop",
+  difficulty: "Dive Bar",
   style: "sour",
   spirit: "vodka",
   era: "craft-revival",
@@ -2342,6 +2404,7 @@ export const COCKTAILS = [
 }, {
   id: "porn-star-martini",
   name: "Porn Star Martini",
+  difficulty: "Hotel Bar",
   style: "sour",
   spirit: "vodka",
   era: "modern",
@@ -2373,6 +2436,7 @@ export const COCKTAILS = [
 }, {
   id: "harvey-wallbanger",
   name: "Harvey Wallbanger",
+  difficulty: "Dive Bar",
   style: "highball",
   spirit: "vodka",
   era: "golden-age",
@@ -2404,6 +2468,7 @@ export const COCKTAILS = [
 }, {
   id: "mimosa",
   name: "Mimosa",
+  difficulty: "Dive Bar",
   style: "spritz",
   spirit: "champagne",
   era: "golden-age",
@@ -2446,6 +2511,7 @@ export const COCKTAILS = [
 }, {
   id: "bellini",
   name: "Bellini",
+  difficulty: "Dive Bar",
   style: "spritz",
   spirit: "champagne",
   era: "golden-age",
@@ -2477,6 +2543,7 @@ export const COCKTAILS = [
 }, {
   id: "kir-royale",
   name: "Kir Royale",
+  difficulty: "Hotel Bar",
   style: "spritz",
   spirit: "champagne",
   era: "golden-age",
@@ -2508,6 +2575,7 @@ export const COCKTAILS = [
 }, {
   id: "aperol-spritz",
   name: "Aperol Spritz",
+  difficulty: "Dive Bar",
   style: "spritz",
   spirit: "champagne",
   era: "golden-age",
@@ -2550,6 +2618,7 @@ export const COCKTAILS = [
 }, {
   id: "champagne-cocktail",
   name: "Champagne Cocktail",
+  difficulty: "Hotel Bar",
   style: "spritz",
   spirit: "champagne",
   era: "golden-age",
@@ -2581,6 +2650,7 @@ export const COCKTAILS = [
 }, {
   id: "amaretto-sour",
   name: "Amaretto Sour",
+  difficulty: "Hotel Bar",
   style: "sour",
   spirit: "other",
   era: "golden-age",
@@ -2623,6 +2693,7 @@ export const COCKTAILS = [
 }, {
   id: "caipirinha",
   name: "Caipirinha",
+  difficulty: "Hotel Bar",
   style: "sour",
   spirit: "other",
   era: "craft-revival",
@@ -2665,6 +2736,7 @@ export const COCKTAILS = [
 }, {
   id: "long-island-iced-tea",
   name: "Long Island Iced Tea",
+  difficulty: "Hotel Bar",
   style: "highball",
   spirit: "other",
   era: "craft-revival",
@@ -2705,6 +2777,7 @@ export const COCKTAILS = [
 }, {
   id: "trinidad-sour",
   name: "Trinidad Sour",
+  difficulty: "Mixology Guru",
   style: "sour",
   spirit: "other",
   era: "craft-revival",
@@ -2736,6 +2809,7 @@ export const COCKTAILS = [
 }, {
   id: "chartreuse-swizzle",
   name: "Chartreuse Swizzle",
+  difficulty: "Mixology Guru",
   style: "tiki",
   spirit: "other",
   era: "tiki-era",
@@ -2767,6 +2841,7 @@ export const COCKTAILS = [
 }, {
   id: "grasshopper",
   name: "Grasshopper",
+  difficulty: "Hotel Bar",
   style: "sour",
   spirit: "other",
   era: "golden-age",
@@ -2808,6 +2883,7 @@ export const COCKTAILS = [
 }, {
   id: "suffering-bastard",
   name: "Suffering Bastard",
+  difficulty: "Mixology Guru",
   style: "highball",
   spirit: "other",
   era: "golden-age",
@@ -2839,6 +2915,7 @@ export const COCKTAILS = [
 }, {
   id: "peychauds-cup",
   name: "Peychaud's Cup",
+  difficulty: "Mixology Guru",
   style: "highball",
   spirit: "other",
   era: "golden-age",
@@ -2866,6 +2943,435 @@ export const COCKTAILS = [
     steps: "Add 1 oz rye, 4 dashes Peychaud's bitters, 1/2 oz lemon juice, and 1/4 oz simple syrup to a flute. Top with 3 oz champagne. Stir gently. Garnish with a lemon twist.",
     ratioNotes: "Rye whiskey provides body and spice that complements Peychaud's bitters beautifully. This feels more like a cocktail than the classic, which is more of an aperitif. A sophisticated riff on the original.",
     brandRecs: "Rittenhouse or any quality rye + Peychaud's Bitters + Champagne."
+  }]
+},
+{
+  id: "margari-ty",
+  name: "Margari-Ty",
+  difficulty: "Mixology Guru",
+  style: "sour",
+  spirit: "tequila",
+  era: "modern",
+  history: "A modern original that bridges the gap between a classic Margarita and the herbal complexity of Chartreuse. The green Chartreuse adds an unexpected botanical depth to the tequila-citrus foundation, while pineapple juice brings a tropical sweetness that keeps the drink approachable. The pinch of salt ties it all together the way a salted rim would on a traditional Margarita, but integrated into the drink itself. A backyard classic in the making.",
+  tags: ["refreshing", "summer", "crowd-pleaser", "tropical", "bold"],
+  variations: [{
+    name: "Original",
+    canon: true,
+    spec: ["2 oz blanco tequila", "2 oz green Chartreuse", "1 oz pineapple juice", "1 oz lime juice", "1 pinch salt"],
+    ingredients: ["blanco-tequila", "green-chartreuse", "pineapple-juice", "lime-juice", "salt"],
+    glass: "coupe",
+    garnish: "",
+    method: "Shake",
+    steps: "Combine all ingredients in a shaker with ice. Shake hard for 12-15 seconds until well chilled. Double strain into a chilled coupe. No garnish \u2014 let the drink speak for itself.",
+    ratioNotes: "Equal parts tequila and Chartreuse is bold \u2014 most drinks use Chartreuse as an accent, but here it\u2019s a full co-star. The pineapple and lime provide enough acid and sweetness to balance that herbal intensity. The salt is subtle but essential: it suppresses bitterness and amplifies the tropical fruit character. Don\u2019t skip it.",
+    brandRecs: "Espolon Blanco or Cimarron for the tequila \u2014 clean agave flavor that won\u2019t fight the Chartreuse. Green Chartreuse is Green Chartreuse, there\u2019s only one. Fresh pineapple juice is ideal if you have it; otherwise Lakewood or Dole 100% works."
+  }]
+},
+{
+  id: "old-cuban",
+  name: "Old Cuban",
+  difficulty: "Mixology Guru",
+  style: "sparkling",
+  spirit: "rum",
+  era: "modern",
+  history: "Created by Audrey Saunders at Pegu Club in New York around 2001, the Old Cuban is essentially a Mojito dressed in a tuxedo. Saunders took the classic Cuban template — rum, lime, mint, sugar — and elevated it with aged rum, Angostura bitters, and a champagne float. It became an instant modern classic and cemented Saunders' reputation as one of the most influential bartenders of the 21st century. The drink perfectly bridges casual tropical flavors with black-tie elegance.",
+  tags: ["elegant", "date-night", "celebratory", "refreshing", "impress-someone"],
+  variations: [{
+    name: "Classic",
+    canon: true,
+    spec: ["1.5 oz aged rum", "1 oz fresh lime juice", "1 oz simple syrup", "6 mint leaves", "2 dashes Angostura bitters", "2 oz champagne"],
+    ingredients: ["aged-rum", "lime-juice", "simple-syrup", "mint", "angostura-bitters", "champagne"],
+    glass: "coupe",
+    garnish: "Mint sprig",
+    method: "Shake",
+    steps: "Muddle 6 mint leaves gently in the bottom of your shaker — press, don't tear. Add aged rum, lime juice, simple syrup, and Angostura bitters. Add ice, shake vigorously for 10-12 seconds. Double strain into a chilled coupe. Top with 2 oz champagne. Garnish with a mint sprig.",
+    ratioNotes: "The aged rum provides warmth and complexity that white rum can't match here. Angostura bitters are the secret weapon — they bridge the rum and champagne, adding spice depth. Double straining is essential to keep mint fragments out of this elegant serve. The champagne goes on last, gently, to preserve bubbles.",
+    brandRecs: "Appleton Estate 8 Year or El Dorado 8 for the rum — you want oak and vanilla notes. Champagne doesn't need to be expensive: Crémant d'Alsace or a good Cava works beautifully."
+  }, {
+    name: "Simplified (No Champagne)",
+    canon: false,
+    spec: ["2 oz aged rum", "1 oz fresh lime juice", "3/4 oz simple syrup", "6 mint leaves", "2 dashes Angostura bitters", "2 oz club soda"],
+    ingredients: ["aged-rum", "lime-juice", "simple-syrup", "mint", "angostura-bitters", "club-soda"],
+    glass: "coupe",
+    garnish: "Mint sprig",
+    method: "Shake",
+    steps: "Muddle mint gently in shaker. Add rum, lime juice, simple syrup, and bitters. Shake with ice. Double strain into a coupe. Top with club soda.",
+    ratioNotes: "Swapping champagne for club soda loses the yeasty complexity but keeps the effervescence. Bump the rum slightly to compensate for lost richness. Still a gorgeous drink, just more casual.",
+    brandRecs: "Any quality aged rum — Plantation 5 Year, Mount Gay Eclipse, or Bacardi 8."
+  }]
+},
+{
+  id: "division-bell",
+  name: "Division Bell",
+  difficulty: "Mixology Guru",
+  style: "sour",
+  spirit: "mezcal",
+  era: "modern",
+  history: "Created by Phil Ward at Mayahuel in New York City around 2009, the Division Bell is named after the Pink Floyd album. Ward, who helped pioneer the mezcal cocktail movement in the U.S., built this as a Last Word riff that swaps gin for mezcal and maraschino for Aperol. The result is a smoky, bittersweet masterpiece that introduced countless drinkers to mezcal as a cocktail ingredient. It's become a benchmark for the modern mezcal cocktail canon.",
+  tags: ["smoky", "bold", "spirit-forward", "adventurous", "impress-someone"],
+  variations: [{
+    name: "Classic",
+    canon: true,
+    spec: ["1 oz mezcal", "1 oz Aperol", "1/2 oz fresh lime juice", "1/2 oz maraschino liqueur"],
+    ingredients: ["mezcal", "aperol", "lime-juice", "maraschino-liqueur"],
+    glass: "coupe",
+    garnish: "Grapefruit twist",
+    method: "Shake",
+    steps: "Combine mezcal, Aperol, lime juice, and maraschino liqueur in a shaker with ice. Shake vigorously for 10-12 seconds. Double strain into a chilled coupe. Express a grapefruit twist over the surface and drop it in.",
+    ratioNotes: "The equal-parts mezcal and Aperol creates a smoky-bitter backbone, while the half-parts lime and maraschino add brightness and sweetness. It's essentially a Last Word template with smoke and bitterness replacing herbal and botanical notes. The grapefruit twist ties the Aperol's citrus character to the mezcal's earthy smoke.",
+    brandRecs: "Del Maguey Vida or Banhez for approachable smoke, Luxardo Maraschino (the only real option), and standard Aperol. Don't go too smoky on the mezcal or it'll overpower the balance."
+  }, {
+    name: "Tequila Riff",
+    canon: false,
+    spec: ["1 oz reposado tequila", "1 oz Aperol", "1/2 oz fresh lime juice", "1/2 oz maraschino liqueur"],
+    ingredients: ["reposado-tequila", "aperol", "lime-juice", "maraschino-liqueur"],
+    glass: "coupe",
+    garnish: "Grapefruit twist",
+    method: "Shake",
+    steps: "Combine reposado tequila, Aperol, lime juice, and maraschino liqueur in a shaker with ice. Shake well. Double strain into a coupe. Garnish with a grapefruit twist.",
+    ratioNotes: "Swapping mezcal for reposado tequila removes the smoke and adds oak and vanilla. It's mellower and more approachable — a good entry point before graduating to the mezcal version.",
+    brandRecs: "Fortaleza Reposado, Espolòn Reposado, or Olmeca Altos Reposado."
+  }]
+},
+{
+  id: "growing-old-dying-happy",
+  name: "Growing Old & Dying Happy Is a Hope, Not Inevitability",
+  difficulty: "Mixology Guru",
+  style: "spirit-forward",
+  spirit: "whiskey",
+  era: "modern",
+  history: "A philosophical cocktail born from the idea that the good life isn't guaranteed — it's built, one intentional moment at a time. This drink demands patience: the slow stir, the careful balance of bitter and sweet, the warmth that builds as you sit with it. It's not a party drink. It's the drink you make when the house is quiet, the day is done, and you're choosing to be present. The name is the point — a reminder that happiness takes work, just like a well-made cocktail.",
+  tags: ["contemplative", "spirit-forward", "date-night", "bold", "impress-someone"],
+  variations: [{
+    name: "Original",
+    canon: true,
+    spec: ["1.5 oz bourbon", "1/2 oz aged rum", "1/2 oz Amaro Nonino", "1/4 oz honey syrup", "2 dashes Angostura bitters", "1 dash orange bitters"],
+    ingredients: ["bourbon", "aged-rum", "amaro-nonino", "honey-syrup", "angostura-bitters", "orange-bitters"],
+    glass: "rocks",
+    garnish: "Orange twist, expressed and discarded",
+    method: "Stir",
+    steps: "Combine bourbon, aged rum, Amaro Nonino, honey syrup, Angostura bitters, and orange bitters in a mixing glass with ice. Stir slowly for 30-40 seconds — no rush. Strain over a single large ice cube in a rocks glass. Express an orange twist over the surface, then discard it. Drink slowly.",
+    ratioNotes: "The bourbon provides the backbone — warm, familiar, reliable. The aged rum adds depth and a touch of tropical richness that makes you pause and wonder what's different. Amaro Nonino brings bittersweet complexity without overwhelming. Honey syrup (2:1 honey to water) is warmer and rounder than simple syrup, matching the drink's contemplative mood. The dual bitters add layers without competing.",
+    brandRecs: "Woodford Reserve or Four Roses Single Barrel for the bourbon. Appleton Estate 8 Year for the rum. Amaro Nonino is Amaro Nonino — accept no substitutes. If you must, Amaro Montenegro gets close but lacks the saffron elegance."
+  }, {
+    name: "Rye Version",
+    canon: false,
+    spec: ["1.5 oz rye whiskey", "1/2 oz aged rum", "1/2 oz Amaro Nonino", "1/4 oz maple syrup", "2 dashes Angostura bitters", "1 dash black walnut bitters"],
+    ingredients: ["rye", "aged-rum", "amaro-nonino", "maple-syrup", "angostura-bitters"],
+    glass: "rocks",
+    garnish: "Lemon twist",
+    method: "Stir",
+    steps: "Combine rye, aged rum, Amaro Nonino, maple syrup, and both bitters in a mixing glass with ice. Stir for 30-40 seconds. Strain over a large cube in a rocks glass. Express a lemon twist over the drink and discard.",
+    ratioNotes: "Rye's spice gives this version more edge and assertiveness — less wistful, more defiant. The maple syrup adds autumnal warmth that pairs beautifully with rye's pepper. Black walnut bitters deepen the woodsy, contemplative character. This is the version for colder nights.",
+    brandRecs: "Rittenhouse Rye 100 Proof or Michter's US*1 Rye. Real maple syrup only — no substitutes. Fee Brothers Black Walnut Bitters if you can find them."
+  }]
+},
+{
+  id: "bees-knees",
+  name: "Bee's Knees",
+  difficulty: "Hotel Bar",
+  style: "sour",
+  spirit: "gin",
+  era: "prohibition",
+  history: "Born during Prohibition, the Bee's Knees was created to mask the harsh taste of bathtub gin with honey and citrus. The name was 1920s slang for 'the best of everything,' and the drink lives up to it — bright, balanced, and endlessly drinkable. The honey syrup rounds the gin's botanicals into something silky and approachable. It fell out of fashion for decades but has made a massive comeback as bartenders rediscovered its perfect simplicity. It's proof that Prohibition, for all its damage, produced some genuinely great cocktails.",
+  tags: ["refreshing", "classic", "crowd-pleaser", "easy", "date-night"],
+  variations: [{
+    name: "Classic",
+    canon: true,
+    spec: ["2 oz gin", "3/4 oz fresh lemon juice", "3/4 oz honey syrup"],
+    ingredients: ["gin", "lemon-juice", "honey-syrup"],
+    glass: "coupe",
+    garnish: "Lemon twist",
+    method: "Shake",
+    steps: "Combine gin, fresh lemon juice, and honey syrup (2:1 honey to water) in a shaker with ice. Shake vigorously for 12-15 seconds. Double strain into a chilled coupe. Garnish with a lemon twist.",
+    ratioNotes: "The 2:3/4:3/4 ratio is the sweet spot — the honey syrup needs to be strong enough (2:1) to stand up to the lemon without turning the drink into lemonade. Too much honey and it gets cloying; too little and the gin's botanicals fight the citrus. This is one of the few cocktails where the sweetener IS the flavor, not just balance.",
+    brandRecs: "Beefeater or Plymouth for a clean, juniper-forward base. Ford's Gin for something more floral. Use real honey for the syrup — clover honey is reliable, wildflower adds complexity. Avoid flavored honeys."
+  }, {
+    name: "Lavender Bee's Knees",
+    canon: false,
+    spec: ["2 oz gin", "3/4 oz fresh lemon juice", "3/4 oz lavender honey syrup"],
+    ingredients: ["gin", "lemon-juice", "honey-syrup"],
+    glass: "coupe",
+    garnish: "Dried lavender sprig",
+    method: "Shake",
+    steps: "Make lavender honey syrup: steep 1 tbsp dried culinary lavender in 2:1 honey syrup while warm, strain after 10 minutes. Combine gin, lemon juice, and lavender honey syrup in a shaker with ice. Shake vigorously. Double strain into a coupe. Garnish with a dried lavender sprig.",
+    ratioNotes: "The lavender amplifies the floral side of the gin and the honey. Go easy on the steeping time — lavender turns soapy fast. 10 minutes max. This version is more aromatic and slightly more complex, but the base drink does all the heavy lifting.",
+    brandRecs: "Hendrick's pairs beautifully with the lavender. Aviation Gin also works well. Use culinary-grade lavender only — the cheap stuff is bitter."
+  }, {
+    name: "Spicy Bee's Knees",
+    canon: false,
+    spec: ["2 oz gin", "3/4 oz fresh lemon juice", "3/4 oz hot honey syrup", "1 thin slice jalapeño"],
+    ingredients: ["gin", "lemon-juice", "honey-syrup", "jalapeño"],
+    glass: "coupe",
+    garnish: "Thin jalapeño wheel",
+    method: "Shake",
+    steps: "Muddle one thin jalapeño slice gently in the shaker. Add gin, lemon juice, and hot honey syrup (2:1 hot honey to water). Add ice, shake vigorously for 12 seconds. Double strain into a chilled coupe. Float a thin jalapeño wheel on top.",
+    ratioNotes: "The heat from the jalapeño and hot honey plays off the gin's botanicals in a way that's addictive. Start with less heat and build up — you can always add more. The lemon keeps it from feeling heavy despite the honey and spice.",
+    brandRecs: "Tanqueray for its robust juniper that holds up to heat. Mike's Hot Honey for the syrup base, or infuse your own by adding red pepper flakes to warm honey syrup."
+  }]
+},
+{
+  id: "margarita-al-pastor",
+  name: "Margarita al Pastor",
+  difficulty: "Mixology Guru",
+  style: "sour",
+  spirit: "tequila",
+  era: "modern",
+  history: "Created at Licorería Limantour in Mexico City — consistently one of the world's top 50 bars. Inspired by tacos al pastor, this drink translates street food into a glass. The pineapple, cilantro, and serrano chile create a savory-sweet-spicy profile that feels unmistakably Mexican. It's the kind of cocktail that makes you rethink what a Margarita can be. Limantour's bar manager José Luis León built a whole menu around Mexico City's street vendors, and this is the crown jewel.",
+  tags: ["bold", "refreshing", "tropical", "adventurous", "crowd-pleaser"],
+  variations: [{
+    name: "Limantour Original",
+    canon: true,
+    spec: ["1.75 oz blanco tequila", "3/4 oz Cointreau", "3/4 oz fresh lime juice", "1.5 oz taco mix"],
+    ingredients: ["blanco-tequila", "cointreau", "lime-juice", "pineapple-juice", "agave-syrup"],
+    glass: "rocks",
+    garnish: "Cilantro salt rim, pineapple wedge",
+    method: "Shake",
+    steps: "Make taco mix: blend pineapple juice, serrano chile-infused agave syrup, fresh cilantro, mint, and basil — strain. Rim a rocks glass with cilantro salt. Combine tequila, Cointreau, lime juice, and taco mix in a shaker with ice. Shake hard for 12 seconds. Strain over fresh ice in the rimmed glass. Garnish with a pineapple wedge.",
+    ratioNotes: "The 'taco mix' is what makes this special — it's essentially a savory-herbal pineapple syrup with heat. The serrano chile should be a background warmth, not a punch. Fresh herbs are non-negotiable; dried won't give you the brightness. The Cointreau bridges the tequila and the fruit components. This is a project drink, but the taco mix keeps for a week refrigerated.",
+    brandRecs: "Espolòn Blanco or Cimarrón for clean agave. Standard Cointreau. Fresh pineapple juice if possible — canned works but lacks the enzyme complexity."
+  }, {
+    name: "Simplified",
+    canon: false,
+    spec: ["2 oz blanco tequila", "3/4 oz Cointreau", "3/4 oz fresh lime juice", "1 oz pineapple juice", "1/4 oz agave syrup", "2 slices serrano chile", "3 cilantro sprigs"],
+    ingredients: ["blanco-tequila", "cointreau", "lime-juice", "pineapple-juice", "agave-syrup"],
+    glass: "rocks",
+    garnish: "Cilantro sprig, pineapple wedge",
+    method: "Shake",
+    steps: "Muddle serrano slices and cilantro gently in shaker. Add tequila, Cointreau, lime juice, pineapple juice, and agave syrup. Shake hard with ice. Double strain over fresh ice in a rocks glass. Garnish with cilantro and pineapple.",
+    ratioNotes: "This skips the pre-made taco mix and muddles the fresh ingredients directly. Less refined but still captures the spirit. Adjust serrano to taste — seeds in for more heat, seeds out for mild. The double strain is essential to catch the herb and chile bits.",
+    brandRecs: "Any quality blanco tequila. Fresh serrano chiles — jalapeño works as a sub but has a different heat profile."
+  }]
+},
+{
+  id: "bentons-old-fashioned",
+  name: "Benton's Old Fashioned",
+  difficulty: "Mixology Guru",
+  style: "spirit-forward",
+  spirit: "whiskey",
+  era: "modern",
+  history: "Created by Don Lee at PDT (Please Don't Tell) in New York's East Village around 2007. This is the cocktail that single-handedly popularized fat-washing in bars worldwide. Lee infused bourbon with rendered Benton's bacon fat, then froze out the fat, leaving behind a spirit with incredible smoky, savory depth. Paired with maple syrup instead of sugar, it became one of the most influential modern cocktails ever made. The technique opened the door for an entire generation of savory cocktails.",
+  tags: ["bold", "spirit-forward", "impress-someone", "contemplative", "adventurous"],
+  variations: [{
+    name: "Classic",
+    canon: true,
+    spec: ["2 oz bacon fat-washed bourbon", "1/4 oz grade A maple syrup", "2 dashes Angostura bitters"],
+    ingredients: ["bourbon", "maple-syrup", "angostura-bitters"],
+    glass: "rocks",
+    garnish: "Orange twist",
+    method: "Stir",
+    steps: "Fat-wash the bourbon: melt 1.5 oz bacon fat, combine with 750ml bourbon in a container, let sit 4-6 hours at room temp, then freeze overnight. The fat solidifies on top — remove it and strain the bourbon through cheesecloth. To make the cocktail: combine 2 oz bacon bourbon, maple syrup, and bitters in a mixing glass with ice. Stir for 30 seconds. Strain over a large ice cube in a rocks glass. Express an orange twist and drop it in.",
+    ratioNotes: "The bacon fat doesn't make this taste like breakfast — it adds a subtle smoky, umami richness that deepens the bourbon's existing caramel and vanilla notes. Maple syrup is essential; regular simple syrup would miss the point. The fat-washing process is easier than it sounds and the infused bourbon keeps for months. Grade A dark maple syrup has the most flavor.",
+    brandRecs: "Four Roses Yellow Label or Maker's Mark — you want a smooth bourbon that won't fight the bacon. Benton's brand bacon fat is the original choice (available online), but any quality thick-cut smoky bacon works. Real maple syrup only."
+  }, {
+    name: "Shortcut (No Fat-Wash)",
+    canon: false,
+    spec: ["2 oz bourbon", "1/4 oz grade A maple syrup", "2 dashes Angostura bitters", "1 dash liquid smoke"],
+    ingredients: ["bourbon", "maple-syrup", "angostura-bitters"],
+    glass: "rocks",
+    garnish: "Orange twist",
+    method: "Stir",
+    steps: "Combine bourbon, maple syrup, bitters, and one tiny dash of liquid smoke in a mixing glass with ice. Stir for 30 seconds. Strain over a large ice cube. Express an orange twist and drop it in.",
+    ratioNotes: "This is a cheat code. One drop of liquid smoke approximates the bacon fat's smokiness without the prep. It's not the same — you lose the silky mouthfeel and umami depth — but it's 90% of the experience in 2 minutes. Go EASY on the liquid smoke. One drop too many and you've ruined the drink.",
+    brandRecs: "Any good bourbon. Wright's Liquid Smoke (hickory). Real maple syrup."
+  }]
+},
+{
+  id: "garibaldi",
+  name: "Garibaldi",
+  difficulty: "Dive Bar",
+  style: "highball",
+  spirit: "other",
+  era: "golden-age",
+  history: "Named after Giuseppe Garibaldi, the Italian revolutionary who unified Italy in the 1860s. The drink combines Campari (from the north) with orange juice (from the south) — a metaphor for Italian unification in a glass. It was a simple, overlooked drink until Dante bar in NYC's Greenwich Village elevated it by 'fluffing' the orange juice with a centrifugal juicer, creating an impossibly light, frothy texture. Dante won World's Best Bar in 2019, and the Garibaldi was their calling card.",
+  tags: ["refreshing", "brunch", "easy", "crowd-pleaser", "summer"],
+  variations: [{
+    name: "Dante Style",
+    canon: true,
+    spec: ["1.5 oz Campari", "4 oz fresh orange juice (fluffy)"],
+    ingredients: ["campari", "orange-juice"],
+    glass: "highball",
+    garnish: "Orange wedge",
+    method: "Build",
+    steps: "The secret is the orange juice texture. If you have a juicer: juice oranges, then run the juice through a blender on high for 30 seconds to aerate it — it should be foamy and fluffy. Fill a highball glass with ice. Pour Campari over ice. Top with fluffy orange juice. Garnish with an orange wedge. Stir once gently.",
+    ratioNotes: "This is a 2-ingredient drink where technique is everything. The fluffy juice transforms what would be a basic Campari-OJ into something ethereal. The foam on top looks like a sunset. If you can't fluff the juice, it's still good — just not transcendent. Fresh-squeezed only; carton OJ won't aerate properly.",
+    brandRecs: "Campari is Campari — there's only one. Navel oranges for sweeter juice, Valencia for more acid. Blood oranges in winter are spectacular."
+  }, {
+    name: "Simple Build",
+    canon: false,
+    spec: ["1.5 oz Campari", "4 oz fresh orange juice"],
+    ingredients: ["campari", "orange-juice"],
+    glass: "highball",
+    garnish: "Orange slice",
+    method: "Build",
+    steps: "Fill a highball with ice. Add Campari. Top with fresh orange juice. Stir gently. Garnish with an orange slice.",
+    ratioNotes: "Without the fluffy juice technique, this is essentially a dressed-up Campari and OJ. Still a great brunch drink. The bitterness of Campari against sweet orange is a classic pairing. Adjust ratios to taste — more Campari for bitter lovers, more OJ to keep it approachable.",
+    brandRecs: "Campari + fresh oranges. That's it."
+  }]
+},
+{
+  id: "son-of-a-bee-sting",
+  name: "Son of a Bee Sting",
+  difficulty: "Hotel Bar",
+  style: "sour",
+  spirit: "gin",
+  era: "modern",
+  history: "A signature from Hinoki & the Bird in Century City, Los Angeles. This drink takes the Bee's Knees template — gin, honey, citrus — and pushes it sideways with ginger heat and rose water perfume. The ginger adds a spicy backbone that the original lacks, while the rose water lifts everything into something floral and unexpected. It's a cocktail that smells as good as it tastes, which is exactly the kind of thing LA does well.",
+  tags: ["refreshing", "bold", "date-night", "summer", "impress-someone"],
+  variations: [{
+    name: "Original",
+    canon: true,
+    spec: ["2 oz gin", "3/4 oz fresh lemon juice", "1/2 oz honey syrup", "1/2 oz ginger syrup", "2 drops rose water"],
+    ingredients: ["gin", "lemon-juice", "honey-syrup", "ginger-syrup"],
+    glass: "coupe",
+    garnish: "Candied ginger",
+    method: "Shake",
+    steps: "Combine gin, lemon juice, honey syrup, ginger syrup, and rose water in a shaker with ice. Shake vigorously for 12 seconds. Double strain into a chilled coupe. Garnish with candied ginger on the rim.",
+    ratioNotes: "Rose water is lethal in excess — 2 drops, not 2 dashes. The ginger and honey do the heavy lifting; the rose water is a whisper that ties the aromatics together. If it smells like a perfume counter, you've used too much. Split the sweetener between honey and ginger to avoid one-note sweetness.",
+    brandRecs: "Hendrick's (its rose and cucumber botanicals complement the rose water) or Roku (citrus and floral notes). Any quality ginger syrup — Liber & Co is excellent. Cortas rose water is the standard."
+  }]
+},
+{
+  id: "the-gordita",
+  name: "The Gordita",
+  difficulty: "Hotel Bar",
+  style: "sour",
+  spirit: "tequila",
+  era: "modern",
+  history: "Another Hinoki & the Bird creation from their Japanese-influenced LA kitchen. The Gordita is a tequila drink that leans hard into the produce aisle — cucumber for coolness, Fresno chile for color and heat, lime for acid. It's the kind of drink that feels healthy even though it isn't. The name is playful and the drink delivers: bright, spicy, crushable, and built for the Los Angeles sun.",
+  tags: ["refreshing", "summer", "bold", "crowd-pleaser", "tropical"],
+  variations: [{
+    name: "Original",
+    canon: true,
+    spec: ["2 oz blanco tequila", "1 oz fresh lime juice", "3/4 oz agave syrup", "3 cucumber slices", "2 slices Fresno chile"],
+    ingredients: ["blanco-tequila", "lime-juice", "agave-syrup", "cucumber"],
+    glass: "rocks",
+    garnish: "Cucumber ribbon, Fresno chile slice",
+    method: "Shake",
+    steps: "Muddle cucumber slices and Fresno chile in shaker (remove seeds for less heat). Add tequila, lime juice, and agave syrup. Add ice and shake vigorously for 12 seconds. Double strain over fresh ice in a rocks glass. Garnish with a cucumber ribbon and a Fresno slice.",
+    ratioNotes: "The cucumber provides volume and dilution naturally, so the drink stays light despite the full pour of tequila. Fresno chiles have a fruitier, rounder heat than jalapeños — they're essential to the character. Seedless = mild warmth, seeds in = real heat. The agave syrup keeps it in the tequila family.",
+    brandRecs: "Espolòn Blanco, Altos Plata, or any clean blanco. Fresh Fresno chiles (the red ones) — don't substitute green jalapeños, the flavor profile is completely different."
+  }]
+},
+{
+  id: "hinoki-negroni",
+  name: "Hinoki Negroni",
+  difficulty: "Mixology Guru",
+  style: "spirit-forward",
+  spirit: "gin",
+  era: "modern",
+  history: "Hinoki & the Bird's Japanese-inflected take on the Negroni swaps the standard components for more nuanced bottles. Islay gin brings a whisper of smoke, Salers gentiane replaces Campari with a drier, more herbaceous bitterness, and bianco vermouth adds floral sweetness where sweet vermouth would be heavy. The grapefruit twist ties it all together. It's a Negroni for people who find Negronis too blunt — which is either a compliment or an insult depending on who you ask.",
+  tags: ["spirit-forward", "bold", "contemplative", "date-night", "impress-someone"],
+  variations: [{
+    name: "Original",
+    canon: true,
+    spec: ["1 oz Islay-style gin", "1 oz Salers gentiane", "1 oz bianco vermouth"],
+    ingredients: ["gin", "salers", "bianco-vermouth"],
+    glass: "rocks",
+    garnish: "Grapefruit twist",
+    method: "Stir",
+    steps: "Combine gin, Salers, and bianco vermouth in a mixing glass with ice. Stir for 30 seconds. Strain over a large ice cube in a rocks glass. Express a grapefruit twist over the drink and drop it in.",
+    ratioNotes: "Equal parts, like any proper Negroni. The Salers is the key swap — it's a French gentian liqueur that's drier and more botanical than Campari. If you can't find Salers, Suze is the closest substitute. The bianco vermouth (Dolin Blanc or Cocchi Americano) is lighter than sweet vermouth, keeping the drink from getting heavy.",
+    brandRecs: "The Botanist (Islay gin with subtle peat) is ideal. Salers gentiane or Suze as backup. Dolin Blanc or Cocchi Americano for the vermouth. This drink requires shopping, but it's worth it."
+  }, {
+    name: "Approachable Version",
+    canon: false,
+    spec: ["1 oz gin", "1 oz Suze", "1 oz Lillet Blanc"],
+    ingredients: ["gin", "suze", "lillet-blanc"],
+    glass: "rocks",
+    garnish: "Grapefruit twist",
+    method: "Stir",
+    steps: "Combine gin, Suze, and Lillet Blanc in a mixing glass with ice. Stir for 30 seconds. Strain over a large ice cube. Express grapefruit twist and drop in.",
+    ratioNotes: "Suze and Lillet Blanc are easier to find than Salers and bianco vermouth. The result is slightly sweeter and less dry, but captures the same light, bitter, floral spirit.",
+    brandRecs: "Any London Dry gin. Suze is widely available. Lillet Blanc is at most liquor stores."
+  }]
+},
+{
+  id: "shiso-gin-tonic",
+  name: "Shiso Gin & Tonic",
+  difficulty: "Mixology Guru",
+  style: "highball",
+  spirit: "gin",
+  era: "modern",
+  history: "From Katana Kitten in NYC's West Village — ranked #27 in the world's 50 best bars. Owner Masahiro Urushido blends Japanese bartending precision with American cocktail culture. This G&T uses a house-made shiso-quinine syrup that replaces standard tonic water, giving the drink an herbal, almost mentholated freshness that's nothing like a regular gin and tonic. Fresh shiso leaves are draped over the glass when in season. It's a masterclass in how far you can push a simple drink.",
+  tags: ["refreshing", "summer", "adventurous", "impress-someone", "bold"],
+  variations: [{
+    name: "Katana Kitten Style",
+    canon: true,
+    spec: ["2 oz gin", "3/4 oz shiso syrup", "1/2 oz fresh lime juice", "3 oz tonic water", "1 fresh shiso leaf"],
+    ingredients: ["gin", "tonic-water", "lime-juice"],
+    glass: "highball",
+    garnish: "Fresh shiso leaf draped over rim",
+    method: "Build",
+    steps: "Make shiso syrup: muddle 10 shiso leaves in 1 cup simple syrup, let steep 2 hours, strain. Fill a highball with ice. Add gin, shiso syrup, and lime juice. Top with tonic water. Stir once gently. Lay a fresh shiso leaf across the top of the glass.",
+    ratioNotes: "The shiso syrup does double duty as sweetener and flavor — it replaces the sugar in the tonic. Fresh shiso has a unique flavor somewhere between mint, basil, and cilantro. The lime juice adds acid that regular tonic's quinine would provide. If you can't find shiso, this drink doesn't work — don't substitute.",
+    brandRecs: "Roku Gin (Japanese, with yuzu and sakura — perfect pairing). Fever-Tree tonic water. Fresh shiso leaves from Japanese grocery stores or farmers markets (June-October season)."
+  }, {
+    name: "Easy At-Home Version",
+    canon: false,
+    spec: ["2 oz gin", "4 oz tonic water", "4-5 fresh shiso leaves", "1/2 oz fresh lime juice", "1/4 oz simple syrup"],
+    ingredients: ["gin", "tonic-water", "lime-juice", "simple-syrup"],
+    glass: "highball",
+    garnish: "Shiso leaf",
+    method: "Build",
+    steps: "Gently slap 4-5 shiso leaves between your palms to release oils. Drop them in a highball glass. Add ice, gin, lime juice, and simple syrup. Top with tonic water. Stir gently once. Garnish with one more shiso leaf.",
+    ratioNotes: "Skips the syrup-making and uses muddled fresh leaves instead. Less refined but captures the essential shiso character. The slapping technique bruises the leaves without tearing them, releasing aromatic oils.",
+    brandRecs: "Any quality gin. Roku if you want to stay Japanese. Fresh shiso is still non-negotiable."
+  }]
+},
+{
+  id: "billionaire-cocktail",
+  name: "Billionaire Cocktail",
+  difficulty: "Hotel Bar",
+  style: "sour",
+  spirit: "whiskey",
+  era: "modern",
+  history: "A signature from Employees Only in NYC's West Village — one of the most influential cocktail bars of the 2000s and consistently on the world's best bars lists. The Billionaire takes high-proof bourbon and tempers it with fresh lemon, house grenadine, and absinthe bitters. It's a bourbon sour with attitude — the absinthe adds an anise whisper that elevates it beyond the standard template. The name oversells the pretension; the drink itself is surprisingly approachable.",
+  tags: ["bold", "classic", "crowd-pleaser", "impress-someone", "party"],
+  variations: [{
+    name: "Employees Only Original",
+    canon: true,
+    spec: ["2 oz high-proof bourbon", "1 oz fresh lemon juice", "1/2 oz grenadine", "1/2 oz simple syrup", "2 dashes absinthe bitters"],
+    ingredients: ["bourbon", "lemon-juice", "grenadine", "simple-syrup"],
+    glass: "coupe",
+    garnish: "Lemon twist",
+    method: "Shake",
+    steps: "Combine bourbon, lemon juice, grenadine, simple syrup, and absinthe bitters in a shaker with ice. Shake vigorously for 12-15 seconds. Double strain into a chilled coupe. Garnish with a lemon twist.",
+    ratioNotes: "The high-proof bourbon is important — it needs to push through the sweetness of the grenadine and simple syrup. The grenadine should be homemade or high-quality (not Rose's) for pomegranate depth. Absinthe bitters add complexity without the full licorice blast of straight absinthe. The drink is sweeter than most bourbon sours, which is intentional.",
+    brandRecs: "Wild Turkey Rare Breed 116 proof (the original spec) or Maker's Mark Cask Strength. Jack Rudy or Small Hand Foods grenadine. Peychaud's as an absinthe bitters substitute if needed."
+  }]
+},
+{
+  id: "lazy-lover",
+  name: "Lazy Lover",
+  difficulty: "Mixology Guru",
+  style: "sour",
+  spirit: "other",
+  era: "modern",
+  history: "Another Employees Only creation that showcases their willingness to combine ingredients no one else would try. Cachaça as a base is already unusual in a non-Caipirinha context, but infusing green Chartreuse with jalapeño and combining it with French herbal liqueur pushes this into uncharted territory. The result is surprisingly harmonious — herbaceous heat balanced by agave sweetness and bright lime. It's the kind of drink that sounds wrong on paper and tastes completely right in the glass.",
+  tags: ["bold", "adventurous", "refreshing", "impress-someone", "tropical"],
+  variations: [{
+    name: "Original",
+    canon: true,
+    spec: ["1.5 oz cachaça", "3/4 oz jalapeño-infused green Chartreuse", "1/2 oz French herbal liqueur", "3/4 oz fresh lime juice", "1/2 oz agave nectar"],
+    ingredients: ["cachaca", "green-chartreuse", "lime-juice", "agave-syrup"],
+    glass: "coupe",
+    garnish: "Lime wheel",
+    method: "Shake",
+    steps: "Make jalapeño Chartreuse: slice 2 jalapeños into 375ml green Chartreuse, steep for 24-48 hours (taste daily — heat builds), strain. Combine cachaça, jalapeño Chartreuse, herbal liqueur, lime juice, and agave in a shaker with ice. Shake vigorously. Double strain into a chilled coupe. Garnish with a lime wheel.",
+    ratioNotes: "The jalapeño infusion is the whole point — it adds slow-building heat that plays off the Chartreuse's 130 herbal ingredients. Start with 24 hours and taste; 48 hours is for heat lovers. The cachaça's grassy, funky character works better than rum here. Agave keeps it tropical. This is a project, but the infused Chartreuse lasts forever.",
+    brandRecs: "Leblon or Avuá Prata cachaça. Green Chartreuse (only one brand). St-Germain or Génépy des Alpes for the herbal liqueur."
+  }, {
+    name: "Quick Version",
+    canon: false,
+    spec: ["1.5 oz cachaça", "3/4 oz green Chartreuse", "1/2 oz St-Germain", "3/4 oz fresh lime juice", "1/2 oz agave nectar", "2 thin jalapeño slices"],
+    ingredients: ["cachaca", "green-chartreuse", "st-germain", "lime-juice", "agave-syrup"],
+    glass: "coupe",
+    garnish: "Jalapeño wheel",
+    method: "Shake",
+    steps: "Muddle jalapeño slices in shaker. Add cachaça, Chartreuse, St-Germain, lime juice, and agave. Shake hard with ice. Double strain into a coupe. Garnish with a thin jalapeño wheel.",
+    ratioNotes: "Muddling fresh jalapeño gives you the heat without the 48-hour wait. Less integrated than the infusion but gets you 80% there. Remove seeds for milder heat.",
+    brandRecs: "Any cachaça. Green Chartreuse. St-Germain elderflower liqueur."
   }]
 }
 ];

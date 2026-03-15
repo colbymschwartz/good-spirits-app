@@ -8,6 +8,7 @@ export default function CocktailsTab({ cocktails, customCocktails, onSelect, fav
   const [styleFilter, setStyleFilter] = useState("all");
   const [moodFilter, setMoodFilter] = useState("all");
   const [showCustomsOnly, setShowCustomsOnly] = useState(false);
+  const [difficultyFilter, setDifficultyFilter] = useState("all");
 
   const filtered = useMemo(() => {
     let results = cocktails;
@@ -37,6 +38,7 @@ export default function CocktailsTab({ cocktails, customCocktails, onSelect, fav
     );
     if (styleFilter !== "all") results = results.filter(c => c.style === styleFilter);
     if (moodFilter !== "all") results = results.filter(c => c.tags && c.tags.includes(moodFilter));
+    if (difficultyFilter !== "all") results = results.filter(c => c.difficulty === difficultyFilter);
 
     const q = search ? search.toLowerCase() : "";
     const sf = spiritFilter !== "all" ? spiritFilter : "";
@@ -60,7 +62,7 @@ export default function CocktailsTab({ cocktails, customCocktails, onSelect, fav
       }
       return { cocktail: c, varIdx: bestIdx };
     });
-  }, [cocktails, customCocktails, search, spiritFilter, styleFilter, moodFilter, showCustomsOnly]);
+  }, [cocktails, customCocktails, search, spiritFilter, styleFilter, moodFilter, difficultyFilter, showCustomsOnly]);
 
   const spirits = ["all", ...getAllSpirits()];
   const styles = ["all", ...Object.keys(STYLE_LABELS)];
@@ -98,6 +100,13 @@ export default function CocktailsTab({ cocktails, customCocktails, onSelect, fav
           </button>
         ))}
       </div>
+      <div className="pill-row">
+        {["all", "Dive Bar", "Hotel Bar", "Mixology Guru"].map(d => (
+          <button key={d} className={"pill" + (difficultyFilter === d ? " active" : "")} onClick={() => setDifficultyFilter(d)}>
+            {d === "all" ? "All Levels" : (d === "Dive Bar" ? "\u{1F37A} " : d === "Hotel Bar" ? "\u{1F378} " : "\u{1F9EA} ") + d}
+          </button>
+        ))}
+      </div>
       {customCocktails.length > 0 && (
         <div className="customs-toggle">
           <button
@@ -127,6 +136,7 @@ export default function CocktailsTab({ cocktails, customCocktails, onSelect, fav
                   {showVar && <span className="tag" style={{ background: "var(--border-light)", fontSize: "10px" }}>{c.name}</span>}
                   <span className="tag tag-style">{STYLE_LABELS[c.style] || c.style}</span>
                   <span className="tag tag-spirit">{c.spirit}</span>
+                  {c.difficulty && <span className={"difficulty-badge " + c.difficulty.toLowerCase().replace(/ /g, "-")}>{c.difficulty === "Dive Bar" ? "\u{1F37A}" : c.difficulty === "Hotel Bar" ? "\u{1F378}" : "\u{1F9EA}"} {c.difficulty}</span>}
                 </div>
               </div>
               <div className="variation-count">{c.variations.length} var{c.variations.length !== 1 ? "s" : ""}</div>

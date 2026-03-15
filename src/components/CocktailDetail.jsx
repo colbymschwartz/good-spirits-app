@@ -92,6 +92,7 @@ export default function CocktailDetail({
           <div className="cocktail-hero-meta">
             <span className="tag tag-style">{STYLE_LABELS[cocktail.style] || cocktail.style}</span>
             <span className="tag tag-era">{cocktail.era}</span>
+            {cocktail.difficulty && <span className={"difficulty-badge " + cocktail.difficulty.toLowerCase().replace(/ /g, "-")}>{cocktail.difficulty === "Dive Bar" ? "\u{1F37A}" : cocktail.difficulty === "Hotel Bar" ? "\u{1F378}" : "\u{1F9EA}"} {cocktail.difficulty}</span>}
             {cocktail.tags && cocktail.tags.slice(0, 3).map(t => (
               <span key={t} className="tag tag-mood">{MOOD_LABELS[t] || t}</span>
             ))}

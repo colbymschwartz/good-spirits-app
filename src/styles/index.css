@@ -524,3 +524,29 @@ html, body {
     background-size: 16px;
     padding-right: 36px;
 }
+
+/* Difficulty Tier Badges */
+.difficulty-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+.difficulty-badge.dive-bar {
+    background: rgba(107,189,123,0.15);
+    color: var(--success);
+}
+.difficulty-badge.hotel-bar {
+    background: rgba(201,169,110,0.15);
+    color: var(--accent-gold);
+}
+.difficulty-badge.mixology-guru {
+    background: rgba(224,112,112,0.15);
+    color: var(--error);
+}
