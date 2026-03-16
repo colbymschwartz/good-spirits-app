@@ -7255,5 +7255,73 @@ export const COCKTAILS = [
         "brandRecs": "Fortaleza Blanco, El Tesoro Platinum, or Siete Leguas Blanco. Light agave nectar (not dark)."
       }
     ]
+  },
+  {
+    "id": "siesta",
+    "name": "Siesta",
+    "difficulty": "Hotel Bar",
+    "style": "sour",
+    "spirit": "tequila",
+    "era": "modern",
+    "history": "Created by Katie Stipe at Flatiron Lounge in New York City, the Siesta is a tequila riff on the Hemingway Daiquiri (a.k.a. Papa Doble), replacing rum with blanco tequila while keeping the Campari-meets-citrus DNA. The grapefruit and lime do the heavy lifting on acidity, while Campari adds a bitter backbone that makes this far more complex than a standard Margarita. It's become a modern classic for good reason—perfectly balanced between bitter, tart, and sweet.",
+    "tags": [
+      "classic",
+      "refreshing",
+      "bold",
+      "summer",
+      "impress-someone"
+    ],
+    "variations": [
+      {
+        "name": "Classic Siesta",
+        "canon": true,
+        "spec": [
+          "1 1/2 oz blanco tequila",
+          "1/2 oz Campari",
+          "1/2 oz fresh grapefruit juice",
+          "3/4 oz fresh lime juice",
+          "3/4 oz simple syrup"
+        ],
+        "ingredients": [
+          "blanco-tequila",
+          "campari",
+          "grapefruit-juice",
+          "lime-juice",
+          "simple-syrup"
+        ],
+        "glass": "coupe",
+        "garnish": "Lime wheel or grapefruit twist",
+        "method": "Shake",
+        "steps": "Combine blanco tequila, Campari, fresh grapefruit juice, fresh lime juice, and simple syrup in a shaker with ice. Shake vigorously for 10-12 seconds. Double strain into a chilled coupe glass. Garnish with a lime wheel or grapefruit twist. A pinch of kosher salt in the shaker can help balance and brighten the citrus.",
+        "ratioNotes": "The 3:1 tequila-to-Campari ratio keeps the bitterness present but not dominant. The dual citrus (grapefruit + lime) is key—grapefruit for roundness, lime for sharpness. If your grapefruit is very sweet (like Ruby Red), back the simple syrup down to 1/2 oz. The pinch of salt is optional but highly recommended—it suppresses bitterness and amplifies the citrus.",
+        "brandRecs": "Espolòn Blanco or Cimarrón for a clean, affordable pour. Fortaleza Blanco if you want more character. Standard Campari—no substitutes here."
+      },
+      {
+        "name": "Mezcal Siesta",
+        "canon": false,
+        "spec": [
+          "1 oz mezcal",
+          "1/2 oz blanco tequila",
+          "1/2 oz Campari",
+          "1/2 oz fresh grapefruit juice",
+          "3/4 oz fresh lime juice",
+          "3/4 oz simple syrup"
+        ],
+        "ingredients": [
+          "mezcal",
+          "blanco-tequila",
+          "campari",
+          "grapefruit-juice",
+          "lime-juice",
+          "simple-syrup"
+        ],
+        "glass": "coupe",
+        "garnish": "Grapefruit twist",
+        "method": "Shake",
+        "steps": "Combine mezcal, blanco tequila, Campari, grapefruit juice, lime juice, and simple syrup in a shaker with ice. Shake vigorously and double strain into a chilled coupe. Garnish with a grapefruit twist.",
+        "ratioNotes": "Splitting the base spirit adds smoke without overwhelming the citrus. If using a very smoky mezcal, lean heavier on the tequila side (3/4 oz mezcal, 3/4 oz tequila). The Campari and smoke together create a fascinating bitter-smoky interplay.",
+        "brandRecs": "Del Maguey Vida or Banhez for the mezcal component. Pair with a clean blanco tequila to keep the smoke controlled."
+      }
+    ]
   }
 ];
