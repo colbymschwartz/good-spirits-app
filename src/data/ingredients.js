@@ -340,6 +340,11 @@ export const INGREDIENT_INDEX =
     name: "Passion Fruit Syrup",
     essential: false,
     brands: ["Monin Passion Fruit Syrup"]
+  }, {
+    id: "absinthe",
+    name: "Absinthe",
+    essential: false,
+    brands: ["St. George Absinthe Verte", "Pernod", "Herbsaint"]
   }]
 }, {
   category: "Bitters",
