@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { SPIRIT_ICONS, STYLE_LABELS, MOOD_LABELS } from '../data/constants';
 import { getAllSpirits, spiritLabel } from '../utils/helpers';
+import CocktailOfTheDay from './CocktailOfTheDay';
 
 export default function CocktailsTab({ cocktails, customCocktails, onSelect, favorites, toggleFavorite, onShowCreate, onShowImport }) {
   const [search, setSearch] = useState("");
@@ -79,6 +80,9 @@ export default function CocktailsTab({ cocktails, customCocktails, onSelect, fav
           onChange={e => setSearch(e.target.value)}
         />
       </div>
+      {!search && spiritFilter === "all" && styleFilter === "all" && moodFilter === "all" && difficultyFilter === "all" && (
+        <CocktailOfTheDay cocktails={cocktails} onSelect={onSelect} />
+      )}
       <div className="pill-row">
         {spirits.map(s => (
           <button key={s} className={"pill" + (spiritFilter === s ? " active" : "")} onClick={() => setSpiritFilter(s)}>
