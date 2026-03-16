@@ -1,5 +1,9 @@
 import React, { useState, useMemo } from 'react';
 import { INGREDIENT_INDEX } from '../data/ingredients';
+import { SUBSTITUTIONS, buildReverseSubs } from '../data/substitutions';
+
+// Build reverse lookup once: what bar items can substitute for recipe ingredients
+const REVERSE_SUBS = buildReverseSubs();
 
 export default function MyBarTab({ myBar, barBrands, toggleBarItem, setBarBrands, onSelect, cocktails, customBottles, addCustomBottle, removeCustomBottle }) {
   const [subTab, setSubTab] = useState("inventory");
@@ -8,6 +12,26 @@ export default function MyBarTab({ myBar, barBrands, toggleBarItem, setBarBrands
   const [newBottleCategory, setNewBottleCategory] = useState("Spirits");
 
   const toggleCat = cat => setExpandedCats(prev => ({ ...prev, [cat]: !prev[cat] }));
+
+  // Check if user has an ingredient OR a valid substitute for it
+  const hasIngredientOrSub = (ingredient, allBarItems) => {
+    // Direct match
+    if (allBarItems.includes(ingredient)) return { has: true, via: null };
+    // Check if any bar item is a known substitute for this recipe ingredient
+    const subs = SUBSTITUTIONS[ingredient];
+    if (subs) {
+      for (const sub of subs) {
+        if (allBarItems.includes(sub.id)) return { has: true, via: sub };
+      }
+    }
+    // Check reverse: does the bar item appear as a sub target for this ingredient?
+    for (const barItem of allBarItems) {
+      if (REVERSE_SUBS[barItem] && REVERSE_SUBS[barItem].includes(ingredient)) {
+        return { has: true, via: { id: barItem, name: barItem.replace(/-/g, ' '), notes: 'Can substitute' } };
+      }
+    }
+    return { has: false, via: null };
+  };
 
   const matches = useMemo(() => {
     if (myBar.length === 0 && (!customBottles || customBottles.length === 0)) return { perfect: [], close: [], buyNext: [] };
@@ -18,11 +42,21 @@ export default function MyBarTab({ myBar, barBrands, toggleBarItem, setBarBrands
       cocktail.variations.forEach(v => {
         if (!v.ingredients) return;
         const needed = v.ingredients.filter(i => !["sugar", "sugar-cube", "simple-syrup", "ice"].includes(i));
-        const have = needed.filter(i => allBarItems.includes(i));
-        const missing = needed.filter(i => !allBarItems.includes(i));
+        const have = [];
+        const missing = [];
+        const usedSubs = [];
+        needed.forEach(i => {
+          const result = hasIngredientOrSub(i, allBarItems);
+          if (result.has) {
+            have.push(i);
+            if (result.via) usedSubs.push({ original: i, sub: result.via });
+          } else {
+            missing.push(i);
+          }
+        });
         const pct = needed.length > 0 ? Math.round((have.length / needed.length) * 100) : 0;
-        if (pct === 100) perfect.push({ cocktail, variation: v, pct, missing });
-        else if (pct >= 60 && missing.length <= 2) close.push({ cocktail, variation: v, pct, missing });
+        if (pct === 100) perfect.push({ cocktail, variation: v, pct, missing, usedSubs });
+        else if (pct >= 60 && missing.length <= 2) close.push({ cocktail, variation: v, pct, missing, usedSubs });
       });
     });
     const dedup = arr => {
@@ -150,6 +184,9 @@ export default function MyBarTab({ myBar, barBrands, toggleBarItem, setBarBrands
                       <div className="match-info">
                         <div className="match-name">{m.cocktail.name}</div>
                         <div className="match-missing">{m.variation.name}</div>
+                        {m.usedSubs && m.usedSubs.length > 0 && (
+                          <div className="match-subs">{"\u{1F504}"} Using: {m.usedSubs.map(s => s.sub.name || s.sub.id.replace(/-/g, ' ')).join(', ')}</div>
+                        )}
                       </div>
                     </div>
                   ))}

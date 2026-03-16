@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { SPIRIT_ICONS, STYLE_LABELS, MOOD_LABELS } from '../data/constants';
 import { parseSpecLine } from '../utils/parseSpec';
 import { formatAmount } from '../utils/formatAmount';
+import { SUBSTITUTIONS, subIngredientName } from '../data/substitutions';
 
 export default function CocktailDetail({
   cocktail, initialVariation, onClose,
@@ -215,6 +216,27 @@ export default function CocktailDetail({
                 <div className="detail-section">
                   <div className="detail-label">Recommended Bottles</div>
                   <div className="detail-text">{variation.brandRecs}</div>
+                </div>
+              )}
+
+              {variation.ingredients && variation.ingredients.some(ing => SUBSTITUTIONS[ing]) && (
+                <div className="detail-section subs-section">
+                  <div className="detail-label">Substitutions</div>
+                  <div className="subs-list">
+                    {variation.ingredients.filter(ing => SUBSTITUTIONS[ing]).map(ing => (
+                      <div key={ing} className="subs-ingredient">
+                        <div className="subs-ingredient-name">{subIngredientName(ing)}</div>
+                        <div className="subs-options">
+                          {SUBSTITUTIONS[ing].map(sub => (
+                            <div key={sub.id} className="subs-option">
+                              <span className="subs-option-name">{sub.name}</span>
+                              {sub.notes && <span className="subs-option-notes">{sub.notes}</span>}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               )}
 

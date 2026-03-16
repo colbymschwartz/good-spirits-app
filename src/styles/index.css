@@ -687,3 +687,56 @@ html, body {
     border-top: 1px solid rgba(201, 169, 110, 0.1);
     letter-spacing: 0.3px;
 }
+
+/* Substitutions section in detail modal */
+.subs-section {
+    background: rgba(201, 169, 110, 0.04);
+    border-radius: var(--radius-sm);
+    padding: 12px;
+    margin-top: 4px;
+}
+.subs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.subs-ingredient {
+    border-bottom: 1px solid rgba(201, 169, 110, 0.1);
+    padding-bottom: 10px;
+}
+.subs-ingredient:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.subs-ingredient-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent-gold);
+    margin-bottom: 6px;
+}
+.subs-options {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-left: 10px;
+}
+.subs-option {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.subs-option-name {
+    font-size: 13px;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+.subs-option-name::before {
+    content: "↳ ";
+    color: var(--text-dim);
+}
+.subs-option-notes {
+    font-size: 11px;
+    color: var(--text-secondary);
+    padding-left: 18px;
+    font-style: italic;
+}

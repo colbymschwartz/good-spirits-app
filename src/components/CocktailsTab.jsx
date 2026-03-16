@@ -1,7 +1,18 @@
 import React, { useState, useMemo } from 'react';
 import { SPIRIT_ICONS, STYLE_LABELS, MOOD_LABELS } from '../data/constants';
 import { getAllSpirits, spiritLabel } from '../utils/helpers';
+import { SUBSTITUTIONS } from '../data/substitutions';
 import CocktailOfTheDay from './CocktailOfTheDay';
+
+// Build a search index: ingredient ID -> all searchable names (including sub names)
+const SEARCH_SUB_INDEX = {};
+for (const [ingId, subs] of Object.entries(SUBSTITUTIONS)) {
+  SEARCH_SUB_INDEX[ingId] = [
+    ingId.replace(/-/g, ' '),
+    ...subs.map(s => s.name.toLowerCase()),
+    ...subs.map(s => s.id.replace(/-/g, ' ')),
+  ];
+}
 
 export default function CocktailsTab({ cocktails, customCocktails, onSelect, favorites, toggleFavorite, onShowCreate, onShowImport }) {
   const [search, setSearch] = useState("");
@@ -25,7 +36,11 @@ export default function CocktailsTab({ cocktails, customCocktails, onSelect, fav
         c.variations.some(v =>
           v.name.toLowerCase().includes(q) ||
           (v.spec && v.spec.some(s => s.toLowerCase().includes(q))) ||
-          (v.ingredients && v.ingredients.some(ing => ing.toLowerCase().includes(q)))
+          (v.ingredients && v.ingredients.some(ing =>
+            ing.toLowerCase().includes(q) ||
+            // Also search substitution names for this ingredient
+            (SEARCH_SUB_INDEX[ing] && SEARCH_SUB_INDEX[ing].some(name => name.includes(q)))
+          ))
         ) ||
         (c.tags && c.tags.some(t => t.toLowerCase().includes(q)))
       );
