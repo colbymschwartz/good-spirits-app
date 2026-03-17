@@ -740,3 +740,43 @@ html, body {
     padding-left: 18px;
     font-style: italic;
 }
+
+/* FAB action menu */
+.fab-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 49;
+}
+.fab-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    animation: fabSlideUp 0.2s ease-out;
+}
+@keyframes fabSlideUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.fab-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.15s;
+}
+.fab-menu-item:hover, .fab-menu-item:active {
+    background: var(--bg-card-hover);
+}
+.fab-menu-icon {
+    font-size: 16px;
+    width: 24px;
+    text-align: center;
+}

@@ -107,10 +107,6 @@ export default function ImportModal({ onClose, onSave }) {
         <div className="modal-body">
           {!parsed ? (
             <>
-              <div style={{ fontSize: "13px", color: "var(--text-secondary)", marginBottom: "12px" }}>
-                Snap a photo of a menu or recipe, or paste the text manually. The parser will extract the name, ingredients, and steps.
-              </div>
-
               {scanning && (
                 <div style={{ marginBottom: "16px" }}>
                   {scanPreview && (
@@ -141,10 +137,22 @@ export default function ImportModal({ onClose, onSave }) {
                 </div>
               )}
 
-              <textarea className="import-textarea" value={rawText} onChange={e => setRawText(e.target.value)} placeholder={"Old Fashioned\n2 oz bourbon\n1 sugar cube\n2-3 dashes Angostura bitters\n\nSteps:\n1. Place sugar cube in glass\n2. Add bitters and muddle\n3. Add bourbon and ice\n4. Stir and garnish with orange peel"} />
+              {!scanning && (
+                <div style={{ textAlign: "center", padding: scanPreview ? "0" : "20px 0 12px", marginBottom: "12px" }}>
+                  {!scanPreview && (
+                    <div style={{ fontSize: "13px", color: "var(--text-secondary)", marginBottom: "16px" }}>
+                      Take a photo of a cocktail menu or recipe, or paste the text below.
+                    </div>
+                  )}
+                  <button className="btn btn-outline" onClick={handlePhoto} style={{ marginBottom: scanPreview ? "0" : "12px" }}>
+                    {scanPreview ? "\u{1F4F7} Retake Photo" : "\u{1F4F7} Scan a Recipe Photo"}
+                  </button>
+                </div>
+              )}
+
+              <textarea className="import-textarea" value={rawText} onChange={e => setRawText(e.target.value)} placeholder={"Paste recipe text here...\n\nHandy Panky\n1.5 oz gin\n1.5 oz sweet vermouth\n2 dashes Fernet-Branca\n\nStir with ice, strain into coupe.\nGarnish with orange peel."} />
               <div style={{ display: "flex", gap: "10px", marginTop: "12px" }}>
                 <button className="btn btn-primary" style={{ flex: 1 }} onClick={() => parseRecipe()} disabled={!rawText.trim() || scanning}>Parse Recipe</button>
-                <button className="btn btn-outline" onClick={handlePhoto} disabled={scanning}>{"\u{1F4F7}"} Photo</button>
                 <button className="btn btn-secondary" onClick={onClose}>Cancel</button>
               </div>
             </>

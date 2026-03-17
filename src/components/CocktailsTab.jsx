@@ -21,6 +21,7 @@ export default function CocktailsTab({ cocktails, customCocktails, onSelect, fav
   const [moodFilter, setMoodFilter] = useState("all");
   const [showCustomsOnly, setShowCustomsOnly] = useState(false);
   const [difficultyFilter, setDifficultyFilter] = useState("all");
+  const [showAddMenu, setShowAddMenu] = useState(false);
 
   const filtered = useMemo(() => {
     let results = cocktails;
@@ -169,9 +170,23 @@ export default function CocktailsTab({ cocktails, customCocktails, onSelect, fav
           <div className="empty-state-text">No cocktails match your filters.<br />Try adjusting your search.</div>
         </div>
       )}
-      <div style={{ position: "fixed", bottom: "84px", right: "16px", display: "flex", flexDirection: "column", gap: "10px", zIndex: 50 }}>
-        <button className="create-fab" style={{ position: "static", width: "44px", height: "44px", fontSize: "18px", background: "var(--border-light)" }} onClick={onShowImport} title="Import Recipe">{"\u{1F4CB}"}</button>
-        <button className="create-fab" style={{ position: "static" }} onClick={onShowCreate} title="Create New">+</button>
+      {showAddMenu && <div className="fab-overlay" onClick={() => setShowAddMenu(false)} />}
+      <div style={{ position: "fixed", bottom: "84px", right: "16px", display: "flex", flexDirection: "column", alignItems: "flex-end", gap: "10px", zIndex: 50 }}>
+        {showAddMenu && (
+          <div className="fab-menu">
+            <button className="fab-menu-item" onClick={() => { setShowAddMenu(false); onShowCreate(); }}>
+              <span className="fab-menu-icon">{"\u270F\uFE0F"}</span>
+              <span>Build from scratch</span>
+            </button>
+            <button className="fab-menu-item" onClick={() => { setShowAddMenu(false); onShowImport(); }}>
+              <span className="fab-menu-icon">{"\u{1F4F7}"}</span>
+              <span>Import from photo</span>
+            </button>
+          </div>
+        )}
+        <button className="create-fab" style={{ position: "static" }} onClick={() => setShowAddMenu(!showAddMenu)} title="Add Cocktail">
+          {showAddMenu ? "\u2715" : "+"}
+        </button>
       </div>
     </div>
   );
