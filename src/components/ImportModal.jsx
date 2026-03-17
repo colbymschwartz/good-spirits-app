@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Tesseract from 'tesseract.js';
 import { STYLE_LABELS } from '../data/constants';
 import { getAllSpirits, generateId, addCustomSpirit } from '../utils/helpers';
 import { parseSpecLine } from '../utils/parseSpec';
@@ -57,7 +58,6 @@ export default function ImportModal({ onClose, onSave }) {
       setScanProgress(0);
 
       try {
-        const Tesseract = await import('tesseract.js');
         const result = await Tesseract.recognize(file, 'eng', {
           logger: (m) => {
             if (m.status === 'recognizing text') {
